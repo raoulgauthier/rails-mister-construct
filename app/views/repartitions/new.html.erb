@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <h1>Ajouté les corps de métier</h1>
+<%= simple_form_for [@sinistre, @repartition] do |f|%>
+<%= f.input :description %>
+<%= f.association :metier %>
+<%= f.submit  'submit', class: 'btn btn-primary'%>
+<% end %>
+  </div>
+  </div>
+</div>
+

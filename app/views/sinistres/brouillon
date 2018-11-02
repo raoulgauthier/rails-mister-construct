@@ -1,0 +1,40 @@
+brouillon
+<!--
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path @sinistre.picture%>');">
+</div>
+
+<ul>
+
+  <% @sinistre.repartitions.each do |repartition| %>
+    <li>
+      <%= repartition.description %>
+      <%= repartition.metier.name %>
+      <%= link_to repartition_path(repartition), method: :delete do %>
+      <i class="fa fa-trash" aria-hidden="true"></i>
+      <% end %>
+    </li>
+  <% end %>
+
+</ul> -->
+
+
+
+
+
+
+
+
+
+          <% elsif i.photo%>
+
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path i.photo%>');">
+              <div class="card-category">Popular</div>
+              <div class="card-description">
+                <h2><%= i.name %></h2>
+              </div>
+            </div>
+
+
+
+
+            <%= link_to "Créer un sinistre", new_sinistre_path, class: "btn btn-danger" %>

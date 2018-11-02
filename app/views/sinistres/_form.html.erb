@@ -1,0 +1,8 @@
+
+<%= simple_form_for(@sinistre) do |f| %>
+  <%= f.input :name, placeholder: "type de sinistre" %>
+  <%= f.input :place, collection: ["Intérieur", "Extérieur"]%>
+  <%= f.input :size, collection: ["Small", "Medium","Big"] %>
+  <%= f.button :submit, class: "btn btn-primary"  %>
+
+<% end %>
